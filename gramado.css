@@ -1,0 +1,870 @@
+
+/* gramado.css - Gramado Personas 2017
+ * piloto version .Versão com comentários detalhados. 
+ */
+ 
+/*
+
+classes:
+    ux4  thinking     mistic 
+	ux3  logic        romantic/abstract  
+	ux2  creativity   realist/concrete
+	ux1  action       naturalist
+
+exemplos:
+
+//4
+ux4-thinking  *
+ux4-thinking-mistic *
+ux4-thinking-header
+ux4-thinking-banner
+ux4-thinking-branding
+ux4-thinking-quotes
+ux4-thinking-inspirational-quotes
+...
+
+//3
+ux3-logic *
+ux3-logic-romantic *
+ux3-logic-abstract *
+ux3-logic-choices  //escolhas envolvem lógica.
+ux3-logic-
+ux3-logic-
+//...
+
+//2
+ux2-creativity*
+ux2-creativity-realist *   talvez haja uma diferencça entre realista e realistico.   
+ux2-creativity-realistic * 
+ux2-creativity-concrete  *
+ux2-creativity-colors
+//...
+
+//1
+ux1-action *
+ux1-action-naturalist*
+ux1-action-footer 
+ux1-action-funny
+//...
+*/
+
+/**
+ * Table of Contents (personalizado)
+ *
+ * 1.0 - Reset (gramado-init Inicializações) 
+ * 2.0 - Genericons (ícones), não sei se deveria ser agora. (ícones que servem de link ...categorias: 'social' por exemplo. ...
+ *      .icons-social:    //link externo para extender o contado com o usuário atravaes de outras rredes ou sites.
+        .icons-navigation:
+		 ...
+ * 3.0 - Typography (?? big, small (font size ??) sup, sub, mark, ins,pre,samp, var, tt, kbd, code, address, blockquote support h1,
+h2,
+h3,
+h4,
+h5,
+h6   ... p,b strong .. dfn , cite .. em i, body,
+button,
+input,
+select,
+textarea,
+ * 4.0 - Elements    ( #basic .deve ser os elementos básicos de html(del, figure, img, th, td, (th, td) ,caption, table dd, dt,dl li, ul, ol, hr
+ * 5.0 - Forms        ( ?? search-forms forms input support password buttons
+ 
+ * 6.0 - Navigations   ( links e menus ... barras não eria aqui.??)
+ *   6.1 - Links
+ *   6.2 - Menus
+ 
+ * 7.0 - Accessibility ( ??
+ * 8.0 - Alignments   alignleft alignright aligncenter ... estilos para cada escolha de alinmhamento.
+ * 9.0 - Clearings ?? ão sei do que se trata
+ * 10.0 - Header (header branding title logo description
+ * 11.0 - Widgets    ?? são getgets??
+ 
+ * 12.0 - Content    (conteúdo páginas, posts, formato dos posts dos testos dos posts ... os comentários.
+ *    12.1 - Posts and pages  (suporte para as páginas do site e para os posts, que são quase a mesma coisa que páginas.
+ *    12.2 - Post Formats   suporte aos vários tipos de posts. image video quote gallery status link audio chat (prioridade status, texto e imagens )
+ *    12.3 - Comments   suporte à comentários.
+ 
+ * 13.0 - Footer ... .gramado-footer
+ 
+ * 14.0 - Media  (mídias ?? galerias de fotos e vídeos ?? audio iframe video ...etc
+ *    14.1 - Captions ??
+ *    14.2 - Galleries
+ 
+ * 15.0 - Multisite ?/??
+ 
+ * 16.0 - Media Queries  //?? seria @media screen support ?? levar em conta o tamanho do sisposistivo??
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ 
+ * 17.0 - Print ??
+ */
+
+ /*Obs. tudo deve ser feito com base em classes, começando por ponto. '.'*/
+ 
+<style type="text/css">
+
+
+/******************************************************
+   AQUI É O SUPORTE AS CLASSES GLOBAIS ux4 ux3 ux2 ux1, em ordem.
+******************************************************/
+
+    /*
+	 *    #ux4 thinking
+	 */
+	 
+	 
+	 
+	html {
+        font-size: 18px;
+		font-family: arial, sans-serif;
+        font-weight: bold; 		
+	    margin:0; 
+		padding:0; 
+	}
+	
+	head {
+		/* Nothing */
+	}
+	
+	body {
+        font-size: 18px;
+		font-family: arial, sans-serif;			
+	    font-weight: bold;
+		margin:0; 
+		padding:0; 		
+	}
+	
+    img {
+		font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;
+		max-width: 20%;
+        height: auto;
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+	
+    .ux4-thinking {
+	    font-size: 22px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;
+    }
+	
+    .ux4-thinking-mistic {
+	    font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	}
+	
+    .ux4-thinking-header {
+	    font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	}
+	
+    .ux4-thinking-banner {
+	    font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	}
+	
+    .ux4-thinking-branding {
+		font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;
+	}
+	
+    .ux4-thinking-quotes {
+	    font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	}
+	
+    .ux4-thinking-inspirational-quotes {
+	    font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	}	
+	
+    .ux4-thinking-header-img {
+        font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold; 		
+	    color: #6D6D6D; 
+	}
+    
+	.ux4-thinking-header-string {
+        font-size: 18px;
+		font-family: arial, sans-serif;	
+        font-weight: bold;		
+	    color: #6D6D6D; 
+	}
+	
+	/*botão simples*/
+    .ux4-thinking-buttons { 
+	    font-size: 16px; 
+	    font-family: arial, sans-serif;
+        font-weight: bold;
+        color: #757575;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;	
+	}
+	
+	/*botão simples*/
+    .ux4-thinking-buttons:hover { 
+		font-size: 16px; 
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		color: #000000;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;
+	}	
+	
+    .ux4-thinking-footer { /*EF*/
+        font-size: 18px;		
+		font-family: Comic Sans MS;
+		/*font-family: fantasy; */
+		font-weight: lighter;
+		background-color: #E0E0E0;
+		color: #EEEEEE;
+		/*color: White;*/
+		/*color: Pink*/;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #F0F0F0;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center;        
+    }	
+	
+	
+	/*
+	 *    #ux3 logic   
+	 */
+	 
+	 
+	 
+	.ux3-logic {
+	    font-size: 16px;
+		font-family: arial, sans-serif;	
+        font-weight: normal;
+	} 
+	
+    .ux3-logic-romantic {
+		font-size: 16px;
+		font-family: arial, sans-serif;	
+        font-weight: normal;
+	} 
+	
+    .ux3-logic-abstract{
+		font-size: 16px;
+		font-family: arial, sans-serif;	
+        font-weight: normal;
+	} 
+	
+    .ux3-logic-choices{
+	    font-size: 16px;
+		font-family: arial, sans-serif;	
+        font-weight: normal;		
+	}  
+	
+    /* navigation support */
+
+    .ux3-logic-navigation {
+        font-size: 22px;
+		font-family: arial, sans-serif;
+        font-weight: bold;			
+        background-color:#fff;
+		float: right;
+        display: block;
+        width:100%;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+	    text-align:center;
+        border:1px solid #e1e8ed;
+	    border-bottom:1px solid #e1e8ed;
+    }
+
+    .ux3-logic-navigation .ux3-logic-nav-item {
+	    font-size: 22px;
+		font-family: arial, sans-serif;
+        font-weight: bold;		
+		float:left;
+	    display: block;
+	    text-align:center;
+    }
+	
+    .ux3-logic-navigation .ux3-logic-v-center {
+	    font-size: 22px;
+		font-family: arial, sans-serif;
+        font-weight: bold;
+		text-align:center;
+        position:relative;
+        top:50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%); 
+    }	
+
+    .ux3-logic-navigation .ux3-logic-nav-item a {
+	    font-size: 22px;
+		font-family: arial, sans-serif;		
+        font-weight: bold;
+		padding:20px 40px 19px 40px;
+        text-decoration:none;
+        color:#55acee;
+        border-right:1px solid #e1e8ed;
+        transition: box-shadow 100ms ease;
+    }
+ 
+    .ux3-logic-navigation .ux3-logic-nav-item:last-child a { 
+	    font-size: 22px;
+		font-family: arial, sans-serif;		        
+		font-weight: bold;
+		border-right:none;	
+	}
+	
+    .ux3-logic-navigation .ux3-logic-nav-item a:hover { 
+	    font-size: 22px;;
+		font-family: arial, sans-serif;		
+        font-weight: bold;
+        box-shadow: 0 -16px 0 -11px #55acee inset;		
+	    /*box-shadow: 0 -15px 0 -10px #55acee inset;*/  
+	}
+	
+	.ux3-logic-searchEditBox {
+        font-size: 16px;
+		font-family: arial, sans-serif;
+        font-weight: normal;	    
+		width: 403px; 
+		height: 34px; 
+		padding: 1px; 
+	}
+	
+	.ux3-logic-searchButton {
+	    font-size: 16px; 
+	    font-family: arial, sans-serif;
+        font-weight: bold;
+        color: #757575;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;		
+	}
+	
+	.ux3-logic-searchButton:hover {
+		font-size: 16px; 
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		color: #000000;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;
+    }
+	
+	/*isso precisa virar classe. ux3 logic */
+    .ux3-logic-forms { 
+	    font-size: 16px;
+		font-family: arial, sans-serif;
+        font-weight: normal;		
+	    text-align: center; 
+	}
+	
+	/*botão simples*/
+    .ux3-logic-buttons { 
+	    font-size: 16px; 
+	    font-family: arial, sans-serif;
+        font-weight: bold;
+        color: #757575;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;	
+	}
+	
+	/*botão simples*/
+    .ux3-logic-buttons:hover { 
+		font-size: 16px; 
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		color: #000000;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;
+	}	
+	
+    .ux3-logic-footer { /*G ??*/
+        font-size: 16px;		
+		font-family: Comic Sans MS;
+		/*font-family: fantasy; */
+		font-weight: lighter;
+		background-color: #D0D0D0;
+		color: #DD88DD;
+		/*color: White;*/
+		/*color: Pink*/;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #161616; /*??*/
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center;        
+    }	
+	
+	
+	/*
+	 *    #ux2 creativity
+	 */
+	 
+
+    .ux2-creativity{
+        font-size: 13px;		
+		font-family: Comic Sans MS;
+		font-weight: normal;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 11px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}
+	
+    .ux2-creativity-realist{
+        font-size: 13px;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 11px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}   
+	
+    .ux2-creativity-realistic{
+        font-size: 13px;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 11px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 
+	} 
+	
+    .ux2-creativity-concrete{
+        font-size: 13px;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 11px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}
+	
+    .ux2-creativity-colors{
+        font-size: 11px;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 11px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}	 
+	 
+    .ux2-creativity-links{
+		font-size: 13px;
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+        text-align: center; 
+        color: Pink; 		
+	}
+
+	/*botão simples*/
+    .ux2-creativity-buttons { 
+	    font-size: 16px; 
+	    font-family: arial, sans-serif;
+        font-weight: bold;
+        color: #757575;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;	
+	}
+	
+	/*botão simples*/
+    .ux2-creativity-buttons:hover { 
+		font-size: 16px; 
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		color: #000000;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;
+	}	
+	
+    .ux2-creativity-footer { /*C*/
+        font-size: 11px;		
+		font-family: Comic Sans MS;
+		/*font-family: fantasy; */
+		font-weight: lighter;
+		background-color: #D0D0D0;
+		color: #DD88DD;
+		/*color: White;*/
+		/*color: Pink*/;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #C8C8C8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center;        
+    }		
+	 
+	/*
+	 *    #ux1  action
+	 */
+	 
+	 
+	 
+	.ux1-action {
+        font-size: 8pt;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #D8D8D8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}
+	
+    .ux1-action-naturalist {
+        font-size: 8pt;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #D8D8D8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}
+	
+    .ux1-action-funny {
+        font-size: 8pt;		
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+		background-color: White;
+		color: White;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #D8D8D8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center; 	
+	}
+	
+    .ux1-action-links{
+		font-size: 8px;
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+        text-align: center; 
+        color: Pink; 		
+	}		
+	
+    .ux1-action-funnylinks{
+		font-size: 8px;
+		font-family: Comic Sans MS;
+		font-weight: lighter;
+        text-align: center; 
+        color: Pink; 		
+	}
+
+	/*botão simples*/
+    .ux1-action-buttons { 
+	    font-size: 16px; 
+	    font-family: arial, sans-serif;
+        font-weight: bold;
+        color: #757575;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;	
+	}
+	
+	/*botão simples*/
+    .ux1-action-buttons:hover { 
+		font-size: 16px; 
+		font-family: arial, sans-serif;
+		font-weight: bold;
+		color: #000000;
+		width: 125px; 
+		height: 36px; 
+		padding: 1px;
+	}	
+	
+    .ux1-action-footer { /*#D*/	
+        font-size: 8pt;		
+		font-family: Comic Sans MS;
+		/*font-family: fantasy; */
+		font-weight: lighter;
+		background-color: #D0D0D0;
+		color: #DD88DD;
+		/*color: White;*/
+		/*color: Pink*/;
+		position:fixed;
+        left:0px;
+        bottom:0px;
+	    width:100%;
+		height:5%;
+        border: solid 2px Gray;
+        border-bottom: 8px solid #D8D8D8;
+		/*border-bottom: 8px solid #91D2FA;*/
+        text-align: center;        
+    }	
+	
+	
+/******************************************************
+     DAQUI PRA FRENTE É O @media support .
+	 PODE PARECER FORA DE ORDEM PORQUE AS DIFERENÇAS DE MÍDIA
+	 DEVEM AFETAR VÁRIAS CLASSES.
+******************************************************/
+/*
+ *
+ * @media support: Quais serão as características de acordo com o tamanho da tela do dispositivo.
+ *
+ */
+ 
+/*barra de navegação original, não modificada.*/
+
+/* When the screen is less than 1024 pixels wide, hide all links, except for the first one ("menu"). 
+Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 1023px){
+  
+    .ux3-logic-navigation .ux3-logic-nav-item:not(:first-child) {
+	    font-size: 16px;
+		font-family: arial, sans-serif;		        
+		font-weight: normal;
+		display: none;
+    }
+	
+    .ux3-logic-navigation a.ux3-logic-icon {   /*#bugbug ??*/
+	    font-size: 16px;
+		font-family: arial, sans-serif;		        
+		font-weight: normal;
+		float: left;
+        display: block;
+    }
+	
+    .ux2-creativity-buttons {
+	    display:none;
+    }	
+
+	/* thinking footer*/
+	.ux2-thinking-footer { 
+	    display:none;
+	}
+	
+	/*Logic footer */
+    .ux3-logic-footer {
+	    display:none; 
+	}
+	
+	/*creativity footer */
+	.ux2-creativity-footer { 
+	    display:none;
+	}
+	
+	/*action footer*/
+	.ux1-action-footer { 
+	    display:none;
+	}
+}
+
+	
+
+
+/*.responsive : passa a ser a nova classe para a barra de navegação.
+ Dependendo do tamanho da tela nos usamos essa classe ou a anterior  */
+ 
+/* The "responsive" class is added to the navbar with JavaScript 
+when the user clicks on the icon. 
+This class makes the navbar look good on small screens 
+(display the links vertically instead of horizontally) */
+@media screen and (max-width: 1023px){
+    
+	.ux3-logic-responsive {
+	    font-size: 16px;
+		font-family: arial, sans-serif;			
+	    font-weight: normal;
+		position: relative;
+	}
+    
+	.ux3-logic-responsive a.ux3-logic-icon {   
+	    font-size: 16px;
+		font-family: arial, sans-serif;	
+        font-weight: normal;
+		position: absolute;
+        right: 0;
+        top: 0;
+    }
+  
+   .ux3-logic-responsive .ux3-logic-nav-item a {
+	    font-size: 16px;
+		font-family: arial, sans-serif;
+        font-weight: normal;
+		background-color:#fff;
+		float: none;
+        display: block;
+        text-align: left;
+        border:1px solid #e1e8ed;
+        border-bottom:1px solid #e1e8ed;
+    }
+	
+    .ux3-logic-responsive .ux3-logic-nav-item a:hover {
+		font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+        box-shadow: 0 -16px 0 -11px #55acee inset;		
+	    /*box-shadow: 0 -15px 0 -10px #55acee inset;*/ 
+	}	
+}
+
+/*Responsive for large width, hide menu itens.*/
+@media screen and (min-width: 1023px) {
+	
+    .ux3-logic-navigation .ux3-logic-nav-item:first-child {
+	    font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+		display: none;
+	}
+    
+	.ux3-logic-responsive .ux3-logic-nav-item:not(:first-child) {
+		font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+	    display: none;
+	}
+    
+	.ux3-logic-responsive a.ux3-logic-icon { 
+	    font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+	    float: left; 
+		display: block; 
+	}
+  
+    .ux3-logic-responsive {
+		font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+        background-color:#fff;
+        float: right;
+        display: block;	
+        width:100%;
+        height:60px;
+        margin-left:auto;
+        margin-right:auto;
+	    text-align:center;
+        border:1px solid #e1e8ed;
+        border-bottom:1px solid #e1e8ed;
+    }
+   
+    .ux3-logic-responsive .ux3-logic-nav-item {
+		font-size: 16px;
+        font-family: arial, sans-serif;
+		font-weight: normal;
+		float:left;
+	    display: block;
+	    text-align:center;
+    } 
+  
+    .ux3-logic-responsive .ux3-logic-nav-item a {
+        font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+		color:#55acee;
+		padding:20px 40px 19px 40px;
+        text-decoration:none;
+        border-right:1px solid #e1e8ed;
+        transition: box-shadow 100ms ease;
+    }
+  
+    .ux3-logic-responsive .ux3-logic-nav-item:last-child a { 
+	    font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+		border-right:none; 
+	}
+  
+    .ux3-logic-responsive .ux3-logic-nav-item a:hover { 
+        font-size: 16px;
+		font-family: arial, sans-serif;
+		font-weight: normal;
+        box-shadow: 0 -16px 0 -11px #55acee inset;		
+	    /*box-shadow: 0 -15px 0 -10px #55acee inset;*/ 
+	} 
+}
+	
+	
+	
+	
+</style>
